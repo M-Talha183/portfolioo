@@ -17,6 +17,9 @@ const Page = () => {
 
             </form>
             </div>
+            <div>
+            <button className='w-32 h-10 bg-blue-600 text-white font-bold text-xl rounded-lg hover:bg-blue-900 mt-5'>Submit</button>
+            </div>
         </div>
 
 
