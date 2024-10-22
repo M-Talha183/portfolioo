@@ -14,7 +14,7 @@ const AboutPage = () => {
                 <Image className='w-52 h-52 sm:72  md:w-64 md:h-80 ml-5  rounded-2xl shadow-lg hover:shadow-2xl ' src={myImg} alt="" />
               </div>
               <div className='text-white flex-wrap w-96'>
-                <h3 className='font-bold text-2xl'>I'm Talha</h3>
+                <h3 className='font-bold text-2xl'>I am Talha</h3>
                 <p className='text-lg text-amber-500'>frontend Developer</p>
                 <p className='font-bold'>
                 I am a Frontend based in Karachi Pakistan. I am an Information Technology student undergraduate in SMIU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using Frontend Technologies. Working for myself to improve my skills. Love to build FullStack clones</p>

@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className='bg-slate-800 h-screen w-full sm:gap-3  lg:gap-44 items-center flex  flex-wrap justify-center pt-16 sm:pt-24 '>
             <div >
                 <div className='text-xl sm:text-2xl lg:text-3xl  text-white font-bold '>
-                    <h2 className=''>Hi There, </h2>
+                    <h2 className=''>Hi There </h2>
                     <h2 className='pt-3'> I am Muhammad Talha</h2>
                     <p className='pt-3 '>I am into <span className='text-amber-700'>frontend development</span></p>
                 </div>
