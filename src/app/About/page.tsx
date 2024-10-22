@@ -1,0 +1,33 @@
+import React from 'react';
+import Image from 'next/image';
+import myImg from "../Assests/myImg.png"
+
+const AboutPage = () => {
+    return (
+        <div className='bg-slate-700  w-full h-screen '>
+              <div className='flex  justify-center items-center text-xl sm:text-2xl md:text-4xl font-bold pt-16 sm:pt-20 text-white'>
+                <h1>About <span className='text-yellow-400'>Me</span></h1>
+            </div>
+
+            <div className=' flex flex-wrap justify-center items-center mt-5 sm:mt-20 gap-10  md:gap-20 '>
+               <div className=' text-center'>
+                <Image className='w-52 h-52 sm:72  md:w-64 md:h-80 ml-5  rounded-2xl shadow-lg hover:shadow-2xl ' src={myImg} alt="" />
+              </div>
+              <div className='text-white flex-wrap w-96'>
+                <h3 className='font-bold text-2xl'>I'm Talha</h3>
+                <p className='text-lg text-amber-500'>frontend Developer</p>
+                <p className='font-bold'>
+                I am a Frontend based in Karachi, Pakistan. I am an Information Technology student undergraduate in SMIU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using Frontend Technologies. Working for myself to improve my skills. Love to build Full-Stack clones</p>
+                <div className='mt-8 md:mt-16 text-center'>
+                    <button className='w-32 h-10 rounded-lg bg-blue-700  hover:bg-blue-500'>Resume</button>
+                </div>
+              </div>
+                
+            </div>
+
+            
+        </div>
+    );
+}
+
+export default AboutPage;
