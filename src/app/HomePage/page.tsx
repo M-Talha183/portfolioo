@@ -3,7 +3,7 @@ import Image from 'next/image';
 import lin from "../Assests/lin.png"
 import fac from "../Assests/fac.jpg"
 import insta from "../Assests/insta.jpg"
-import git from "../Assests/git.jpg"
+import github1 from "../Assests/github1.jpg"
 import myImg from "../Assests/myImg.png"
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
             <div >
                 <div className='text-xl sm:text-2xl lg:text-3xl  text-white font-bold '>
                     <h2 className=''>Hi There, </h2>
-                    <h2 className='pt-3'> I'm Muhammad Talha</h2>
+                    <h2 className='pt-3'> I am Muhammad Talha</h2>
                     <p className='pt-3 '>I am into <span className='text-amber-700'>frontend development</span></p>
                 </div>
                     <div className='pt-3'>
@@ -20,10 +20,10 @@ const HomePage = () => {
                     </div>
                 <div className='pt-3'>
                     <ul className='flex sm:mt-2 gap-3  items-center'>
-                    <li><a className="" aria-label="LinkedIn" href="" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={lin} alt="Photo description"  /></a></li> 
-                    <li><a className="" aria-label="LinkedIn" href="" target="_blank"><Image className='w-16 h-16 rounded-full' src={fac} alt="Photo description"  /></a></li> 
-                    <li><a className="" aria-label="LinkedIn" href="" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={insta} alt="Photo description"  /></a></li> 
-                    <li><a className="" aria-label="LinkedIn" href="" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={git} alt="Photo description"  /></a></li> 
+                    <li><a className="" aria-label="LinkedIn" href="https://www.linkedin.com/in/muhammad-talha-4b17522bb/" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={lin} alt="Photo description"  /></a></li> 
+                    <li><a className="" aria-label="Facebook" href="https://www.facebook.com/profile.php?id=100095517277602&mibextid=kFxxJD" target="_blank"><Image className='w-16 h-16 rounded-full' src={fac} alt="Photo description"  /></a></li> 
+                    <li><a className="" aria-label="" href="" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={insta} alt="Photo description"  /></a></li> 
+                    <li><a className="" aria-label="Github" href="https://github.com/Muhammad361738" target="_blank"><Image className='w-12 h-12 rounded-full  ' src={github1} alt="Photo description"  /></a></li> 
 
                     </ul>
                 </div>

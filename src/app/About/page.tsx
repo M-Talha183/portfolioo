@@ -17,9 +17,9 @@ const AboutPage = () => {
                 <h3 className='font-bold text-2xl'>I'm Talha</h3>
                 <p className='text-lg text-amber-500'>frontend Developer</p>
                 <p className='font-bold'>
-                I am a Frontend based in Karachi, Pakistan. I am an Information Technology student undergraduate in SMIU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using Frontend Technologies. Working for myself to improve my skills. Love to build Full-Stack clones</p>
+                I am a Frontend based in Karachi Pakistan. I am an Information Technology student undergraduate in SMIU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using Frontend Technologies. Working for myself to improve my skills. Love to build FullStack clones</p>
                 <div className='mt-8 md:mt-16 text-center'>
-                    <button className='w-32 h-10 rounded-lg bg-blue-700  hover:bg-blue-500'>Resume</button>
+                    <a  href="https://hackhtonmilestone-1-2.vercel.app/" target="_blank"><button className='w-32 h-10 rounded-lg bg-blue-700  hover:bg-blue-500'>Resume</button></a>
                 </div>
               </div>
                 

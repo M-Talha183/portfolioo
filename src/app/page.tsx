@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Navbar from "./Navbar/page"
+
 import HomePage from "./HomePage/page"
 import AboutPage from "./About/page";
 import Skills from "./Skills/page";
