@@ -13,18 +13,19 @@ import next from "../Assests/next.jpg"
 import tailwind from "../Assests/tailwind.jpg"
 import ts from "../Assests/ts.jpg"
 
-const Page = () => {
+const GridBackgroundDemo = () => {
     return (
-        
-             <div className="bg-slate-600 h-auto w-full flex flex-wrap flex-col items-center text-center p-10 ">
-      <div className="h-auto w-full flex flex-wrap flex-col
-            items-center"> 
-            <p className="text-white font-bold text-3xl
-            md:text-4xl text-center mt-10">Skills</p>
-            <div className="w-36 h-1 border-b-4 border-yellow-400 
-            mt-2 rounded-2xl md:mt-4 mb-12">
+     <div className=" w-full h-auto dark:bg-black bg-black dark:bg-dot-white/[0.2] bg-dot-white/[0.2]  relative flex items-center justify-center">
+
+             <div className=" flex flex-wrap flex-col items-center text-center p-10 ">
+               <div className="h-auto w-full flex flex-wrap flex-col
+               items-center"> 
+                 <p className="text-white font-bold text-3xl
+                   md:text-4xl text-center mt-10">Skills</p>
+                   <div className="w-36 h-1 border-b-4 border-yellow-400 
+                   mt-2 rounded-2xl md:mt-4 mb-12">
         </div>
-            <div className="w-[300px] sm:w-[600px] lg:w-[900px] bg-black bg-opacity-40 rounded-lg p-5 pt-10 h-auto flex flex-wrap justify-around">
+            <div className="w-[300px] sm:w-[600px] lg:w-[900px]  rounded-lg p-5 pt-10 h-auto flex flex-wrap justify-around">
               <div className="w-44 flex flex-col items-center  bg-slate-900 rounded-lg mb-5">
                         <Image className="w-28 h-24 rounded-lg mt-5 " src={html} alt="" />
 
@@ -114,9 +115,10 @@ const Page = () => {
 
     </div>
     </div>
+    </div>
      
         
     );
 }
 
-export default Page;
+export default GridBackgroundDemo;
