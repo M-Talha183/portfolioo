@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import myImg from "../Assests/myImg.png"
+import { Button } from "../../components/ui/moving-border";
+
 
 const GridBackgroundDemo = () => {
     return (
@@ -22,7 +24,14 @@ const GridBackgroundDemo = () => {
                 <p className='font-bold'>
                 I am a Frontend based in Karachi Pakistan. I am an Information Technology student undergraduate in SMIU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using Frontend Technologies. Working for myself to improve my skills. Love to build FullStack clones</p>
                 <div className='mt-8 md:mt-16 text-center'>
-                    <a  href="https://hackhtonmilestone-1-2.vercel.app/" target="_blank"><button className='w-32 h-10 rounded-lg bg-blue-700  hover:bg-blue-500'>Resume</button></a>
+                    <a  href="https://hackhtonmilestone-1-2.vercel.app/" target="_blank">  
+                <Button
+             borderRadius="1.75rem"
+        className="bg-slate-900 dark:bg-slate-900 text-white dark:text-white border-neutral-200 dark:border-slate-800"
+      >
+        Resume
+      </Button>
+      </a>
                 </div>
               </div>
                 

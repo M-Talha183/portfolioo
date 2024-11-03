@@ -85,14 +85,14 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-72 shrink-0 gap-4 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
   {items.map((item, ) => (
   <li
-    className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+    className="w-[100px] max-w-72 max-h-60 relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
     style={{
       background: "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
     }}
@@ -112,9 +112,9 @@ export const InfiniteMovingCards = ({
           alt={item.quote} 
         //   width={200} 
         //   height={200} 
-          className="rounded-3xl w-72 h-40"
+          className="rounded-3xl w-40 h-20"
         />
-        <span className="flex justify-center 42 bg-amber-300 p-4 rounded-2xl text-white gap-1">
+        <span className="flex justify-center 42 bg-amber-300 p-2 rounded-2xl text-white gap-1">
           {/* Wrap the name with Link */}
           <Link href={item.link}>
           {item.quote}
