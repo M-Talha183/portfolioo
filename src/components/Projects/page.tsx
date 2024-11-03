@@ -1,15 +1,11 @@
 "use client"
-import Image from "next/image";
-import myImage from "../../app/Assests/myImg.png"
 import coffee from "../../app/Assests/coffee.jpg"
 import rest from "../../app/Assests/rest.jpg"
 import scooter from "../../app/Assests/scooter.jpg"
 import tesla from "../../app/Assests/tesla.jpg"
 import music from "../../app/Assests/music.jpg"
-import assi1 from "../../app/Assests/assi1.jpg"
 
-import Link from "next/link";
- 
+  
 // import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
