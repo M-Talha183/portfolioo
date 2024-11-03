@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Page = () => {
     return (
-        <div className='bg-black opacity-90 flex flex-wrap justify-center relative top-44 md:top-0'>
+        <div className='bg-black opacity-90 flex flex-wrap justify-center relative'>
             <div className='p-10 '>
                 <h3 className='text-white text-xl font-serif '>Portfolio</h3>
                 <div className='text-white pt-5 w-40'>

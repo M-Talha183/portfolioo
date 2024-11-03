@@ -2,9 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import myImg from "../Assests/myImg.png"
 
-const AboutPage = () => {
+const GridBackgroundDemo = () => {
     return (
-        <div className='bg-slate-700  w-full h-screen '>
+      <div className="h-[50rem] w-full dark:bg-black bg-black dark:bg-grid-white/[0.2]  bg-grid-white/[0.2] relative flex items-center justify-center">
+
+
+        <div className='   '>
               <div className='flex  justify-center items-center text-xl sm:text-2xl md:text-4xl font-bold pt-16 sm:pt-20 text-white'>
                 <h1>About <span className='text-yellow-400'>Me</span></h1>
             </div>
@@ -27,7 +30,9 @@ const AboutPage = () => {
 
             
         </div>
+        
+        </div>
     );
 }
 
-export default AboutPage;
+export default GridBackgroundDemo;
