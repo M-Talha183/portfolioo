@@ -30,7 +30,7 @@ const quotesArray = [
     {
         quote: "Scooter App",
       image : scooter,
-      link : "2",
+      link : "https://scooter-nextjs.vercel.app/",
 
      
     },
@@ -45,7 +45,7 @@ const quotesArray = [
     {
       quote: "Chai aur Music App",
       image : music,
-      link : "4",
+      link : "https://music-nextjs-sage.vercel.app/",
       
     }
   ];
