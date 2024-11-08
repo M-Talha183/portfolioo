@@ -11,7 +11,7 @@ const Page = () => {
 
   return (
     <div>
-      <nav className="bg-black bg-opacity-40  fixed w-full z-10 mx-auto h-16 mt-5 text-center text-white">
+      <nav className="bg-black bg-opacity-40  fixed w-full z-20 mx-auto h-16 mt-5 text-center text-white">
         <div className="flex justify-between items-center">
           <div className="font-bold text-2xl font-serif pt-4 pl-6">
             <h2>Portfolio</h2>
