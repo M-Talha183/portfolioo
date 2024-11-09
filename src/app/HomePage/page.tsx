@@ -37,6 +37,7 @@ const TypewriterEffectSmoothDemo = () => {
 
                 <div className='overflow-hidden text-2xl w-[350px] sm:w-[360px] md:w[400px] lg:w-[400px] pt-16 md:pt-48 text-white font-bold '>
                     <h2 className=''>Hi There </h2>
+                    <h2 className='pt-3'>I am <span className="text-amber-500" >Muhammad Talha </span>  </h2>
                     <h2 className='pt-3'>I am <span ><Type/></span>  </h2>
 
                 </div>
