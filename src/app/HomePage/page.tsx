@@ -10,7 +10,7 @@ import insta from "../Assests/insta.jpg"
 import github1 from "../Assests/github1.jpg"
 import myImg from "../Assests/myImg.png"
 
-import Type from "@/app/Type"
+import Type from "@/app/HomePage/Type"
 
 
 const TypewriterEffectSmoothDemo = () => {

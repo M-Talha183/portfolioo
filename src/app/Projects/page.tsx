@@ -7,7 +7,7 @@ import music from "../../app/Assests/music.jpg"
 
   
 // import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 
 
   

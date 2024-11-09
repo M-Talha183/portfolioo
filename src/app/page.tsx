@@ -5,7 +5,7 @@ import Skills from "./Skills/page";
 import Education from "./Education/page"
 import Contact from "./Contact/page"
 import Footer from "./Footer/footer"
-import Projects from "../components/Projects/page"
+import Projects from "./Projects/page"
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { cn } from "@/lib/utils";
 import { StaticImageData } from "next/image";
@@ -17,7 +17,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     image: StaticImageData;
     link: string;
-  }[];
+  }[]; 
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -26,6 +26,14 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
+
+  // Load the speed from localStorage or fallback to the default speed
+  const [currentSpeed, setCurrentSpeed] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("scroll-speed") || speed;
+    }
+    return speed;
+  });
 
   const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
@@ -39,14 +47,14 @@ export const InfiniteMovingCards = ({
       });
 
       getDirection();
-      getSpeed();
+      getSpeed("fast"); // Use the current speed state
       setStart(true);
     }
-  }, [direction, speed]); // Add dependencies if they are used in this function
+  }, [direction, currentSpeed]); // Add currentSpeed as a dependency
 
   useEffect(() => {
     addAnimation();
-  }, [addAnimation]); // Add addAnimation to the dependency array
+  }, [addAnimation]); 
 
   const getDirection = () => {
     if (containerRef.current) {
@@ -64,17 +72,24 @@ export const InfiniteMovingCards = ({
     }
   };
 
-  const getSpeed = () => {
+  const getSpeed = (speed: string ="fast") => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "550s");
+        containerRef.current.style.setProperty("--animation-duration", "5s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty("--animation-duration", "200s");
+      } else if (speed === "slow") {
+        containerRef.current.style.setProperty("--animation-duration", "50s");
       }
     }
   };
+
+  // Save speed to localStorage whenever it changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("scroll-speed", currentSpeed);
+    }
+  }, [currentSpeed]);
 
   return (
     <div
