@@ -1,15 +1,13 @@
-// "use client";
-
-import { cn } from "@/lib/utils";
-import { StaticImageData } from "next/image";
-import Image from 'next/image';
-import Link from 'next/link';
+import { cn } from "@/lib/utils"; // Utility function for classNames
+import { StaticImageData } from "next/image"; // Type for Image data
+import Image from 'next/image'; // Next.js Image component
+import Link from 'next/link'; // Next.js Link component
 import React, { useEffect, useState, useCallback } from "react";
+
 
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
   pauseOnHover = true,
   className,
 }: {
@@ -19,7 +17,6 @@ export const InfiniteMovingCards = ({
     link: string;
   }[]; 
   direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
@@ -27,18 +24,14 @@ export const InfiniteMovingCards = ({
   const scrollerRef = React.useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
 
-  // Load the speed from localStorage or fallback to the default speed
-  const [currentSpeed, setCurrentSpeed] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("scroll-speed") || speed;
-    }
-    return speed;
-  });
+  // Fixed speed (no longer dependent on a state or prop)
+  const currentSpeed = "fast"; // The speed is set to 'fast' by default
 
   const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
+      // Duplicate the items for infinite scrolling
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         if (scrollerRef.current) {
@@ -47,14 +40,14 @@ export const InfiniteMovingCards = ({
       });
 
       getDirection();
-      getSpeed("fast"); // Use the current speed state
+      getSpeed(currentSpeed); // Use the fixed speed value
       setStart(true);
     }
-  }, [direction, currentSpeed]); // Add currentSpeed as a dependency
+  }, [direction, currentSpeed]);
 
   useEffect(() => {
     addAnimation();
-  }, [addAnimation]); 
+  }, [addAnimation]);
 
   const getDirection = () => {
     if (containerRef.current) {
@@ -72,7 +65,7 @@ export const InfiniteMovingCards = ({
     }
   };
 
-  const getSpeed = (speed: string ="fast") => {
+  const getSpeed = (speed: string) => {
     if (containerRef.current) {
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "5s");
@@ -83,13 +76,6 @@ export const InfiniteMovingCards = ({
       }
     }
   };
-
-  // Save speed to localStorage whenever it changes
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("scroll-speed", currentSpeed);
-    }
-  }, [currentSpeed]);
 
   return (
     <div
@@ -103,13 +89,13 @@ export const InfiniteMovingCards = ({
         ref={scrollerRef}
         className={cn(
           "flex min-w-72 shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item) => (
           <li
-            className="w-[350px] max-w-72  relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-72 relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
               background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
             }}

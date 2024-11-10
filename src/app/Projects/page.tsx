@@ -6,8 +6,7 @@ import tesla from "../../app/Assests/tesla.jpg"
 import music from "../../app/Assests/music.jpg"
 
   
-// import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 
 
   
@@ -64,7 +63,7 @@ const TestCards = () => {
                           <InfiniteMovingCards
                             items={quotesArray}
                             direction="right"
-                            speed="slow"
+                            
                             
                           />
                      </div>
