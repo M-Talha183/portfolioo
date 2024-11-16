@@ -23,7 +23,7 @@ const Page = () => {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/About">About</Link></li>
               <li><Link href="/Skills">Skills</Link></li>
-              <li><Link href="/Contact">Projects</Link></li>
+              <li><Link href="/Projects">Projects</Link></li>
               <li><Link href="/Education">Education</Link> </li>
               <li><Link href="/Contact">Contact us</Link></li>
 
@@ -39,12 +39,13 @@ const Page = () => {
 
       {/* Mobile Menu Modal */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex flex-col items-center justify-center">
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex flex-col  justify-center">
           <button onClick={toggleMenu} className="absolute top-5 right-5 text-4xl text-white">&#10006;</button>
           <ul className="text-center text-white text-2xl space-y-6">
             <li><Link href="/" onClick={toggleMenu}>Home</Link></li>
             <li><Link href="/About" onClick={toggleMenu}>About</Link></li>
             <li><Link href="/Skills" onClick={toggleMenu}>Skills</Link></li>
+            <li><Link href="/Projects" onClick={toggleMenu}>Projects</Link></li>
             <li><Link href="/Education" onClick={toggleMenu}>Education</Link></li>
             <li><Link href="/Contact" onClick={toggleMenu}>Contact us</Link></li>
           </ul>
