@@ -6,7 +6,7 @@ import uni from "../Assests/uni.jpg"
 import gover from "../Assests/gover.jpg"
 const Page = () => {
     return (
-        <div className=' w-auto h-auto md:w-ful md:h-screen bg-slate-800 items-center pb-5' >
+        <div className=' w-auto h-auto  md:h-screen bg-black items-center pb-5' >
              <div className="h-auto w-full flex flex-wrap flex-col
             items-center"> 
             <p className="text-white font-bold text-3xl
