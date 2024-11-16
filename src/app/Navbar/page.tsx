@@ -19,7 +19,7 @@ const Page = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:block pt-4 font-bold text-lg">
-            <ul className="outline-none flex gap-10 pr-10">
+            <ul className="outline-none flex gap-6 pr-10">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/About">About</Link></li>
               <li><Link href="/Skills">Skills</Link></li>
