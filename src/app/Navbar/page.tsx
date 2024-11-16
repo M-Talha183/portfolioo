@@ -23,6 +23,7 @@ const Page = () => {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/About">About</Link></li>
               <li><Link href="/Skills">Skills</Link></li>
+              <li><Link href="/Contact">Projects</Link></li>
               <li><Link href="/Education">Education</Link> </li>
               <li><Link href="/Contact">Contact us</Link></li>
 
