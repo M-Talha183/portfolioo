@@ -51,9 +51,10 @@ const quotesArray = [
   
 const TestCards = () => {
     return (
-        <div className="h-[40rem] w-full bg-black relative flex flex-col items-center justify-center
+        <div className="h-auto w-full bg-black relative flex flex-col items-center justify-center
         overflow-hidden">
-            <h2 className="text-3xl font-bold text-center  z-10 text-white">My Projects</h2>
+          <div>
+            <h2 className="text-3xl mt-10 font-bold text-center  z-10 text-white">My Projects</h2>
             <div className="w-36 h-1 border-b-4 border-yellow-400 
           mt-2 rounded-2xl md:mt-4 mb-12">
         </div>
@@ -69,7 +70,7 @@ const TestCards = () => {
                      </div>
 
                 </div>
-            
+                </div>
         </div>
     );
 }

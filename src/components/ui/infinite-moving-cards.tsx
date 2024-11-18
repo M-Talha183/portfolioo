@@ -25,7 +25,7 @@ export const InfiniteMovingCards = ({
   const [start, setStart] = useState(false);
 
   // Fixed speed (no longer dependent on a state or prop)
-  const currentSpeed = "fast"; // The speed is set to 'fast' by default
+  const currentSpeed = "normal"; // The speed is set to 'fast' by default
 
   const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
@@ -70,7 +70,7 @@ export const InfiniteMovingCards = ({
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "5s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "200s");
+        containerRef.current.style.setProperty("--animation-duration", "10s");
       } else if (speed === "slow") {
         containerRef.current.style.setProperty("--animation-duration", "50s");
       }
@@ -81,7 +81,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative   max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >

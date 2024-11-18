@@ -32,7 +32,7 @@ const Page = () => {
 
           {/* Hamburger Icon for Mobile */}
           <div className="block md:hidden">
-            <button onClick={toggleMenu} className="text-4xl text-white p-3">&#8801;</button>
+            <button onClick={toggleMenu} className="text-5xl text-white p-3">&#8801;</button>
           </div>
         </div>
       </nav>
