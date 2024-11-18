@@ -39,7 +39,7 @@ const Page = () => {
 
       {/* Mobile Menu Modal */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex flex-col  justify-center">
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-10 flex flex-col  justify-center">
           <button onClick={toggleMenu} className="absolute top-5 right-5 text-4xl text-white">&#10006;</button>
           <ul className="text-center text-white text-2xl space-y-6">
             <li><Link href="/" onClick={toggleMenu}>Home</Link></li>
