@@ -32,6 +32,13 @@ const quotesArray = [
   
   
 },
+{
+  quote: "Coffie App",
+image : coffee,
+link : "https://coffe-website-21.vercel.app/",
+
+
+},
     {
         quote: "Restaurent App",
 
