@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes text-shimmer {
+  0% { background-position: 0% }
+  100% { background-position: 200% }
+}
+.animate-text-shimmer {
+  background-size: 200%;
+  animation: text-shimmer 4s infinite linear;
+}

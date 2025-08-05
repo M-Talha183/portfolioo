@@ -11,27 +11,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 
   
 const quotesArray = [
-    {
-        quote: "Coffie App",
-      image : coffee,
-      link : "https://coffe-website-21.vercel.app/",
-      
-      
-    },
-    {
-      quote: "Coffie App",
-    image : coffee,
-    link : "https://coffe-website-21.vercel.app/",
-    
-    
-  },
-  {
-    quote: "Coffie App",
-  image : coffee,
-  link : "https://coffe-website-21.vercel.app/",
-  
-  
-},
+   
 {
   quote: "Coffie App",
 image : coffee,
