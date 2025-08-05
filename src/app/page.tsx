@@ -1,23 +1,23 @@
 
-import HomePage from "./HomePage/page"
-import AboutPage from "./About/page";
-import Skills from "./Skills/page";
-import Education from "./Education/page"
-import Contact from "./Contact/page"
-import Footer from "./Footer/footer"
-import Projects from "./Projects/page"
+import AboutPage from "../components/About";
+import Skills from "../components/Skills";
+import Education from "../components/Education"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+import Projects from "../components/Project"
+import HeroSection from "../components/Hero";
 
 export default function Home() {
   return (
    <>
+   <HeroSection/>
    
-   <HomePage/>
    <AboutPage/>
    <Skills/>
    <Education/>
    <Projects/>
    <Contact/>
-   <Footer/>
+    <Footer/>
    </>
   );
 }

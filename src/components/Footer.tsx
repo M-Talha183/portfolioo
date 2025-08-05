@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import f1 from "../Assests/f1.jpg"
-import f2 from "../Assests/f2.jpg"
-import f6 from "../Assests/f6.jpg"
-import github1 from "../Assests/github1.jpg"
+import f1 from "../app/Assests/f1.jpg"
+import f2 from "../app/Assests/f2.jpg"
+import f6 from "../app/Assests/f6.jpg"
+import github1 from "../app/Assests/github1.jpg"
 import Link from 'next/link';
 
-const Page = () => {
+function Footer () {
     return (
         <div className='bg-black opacity-90 flex flex-wrap justify-center relative'>
             <div className='p-10 '>
@@ -16,8 +16,8 @@ const Page = () => {
                 </div>
 
                 <div className='text-white pt-5'>
-                    <p>Phone : +92 3XXXXXXX</p>
-                    <p>Email : abc@gmail.com</p>
+                    <p>Phone : +92 3194880634</p>
+                    <p>Email : shahzainali5002@gmail.com</p>
                 </div>
                 <div className='flex gap-3 mt-2'>
                     <div>
@@ -32,7 +32,7 @@ const Page = () => {
                     <p><a className="h-10 w-10 rounded-full bg-white" aria-label="Github" href="https://www.linkedin.com/in/muhammad-talha-4b17522bb/" target="_blank"><Image className='w-8 h-8 rounded-full  ' src={f6} alt="Photo description"  /></a></p> 
                     </div>
                     <div>
-                    <p><a className="h-10 w-10 rounded-full bg-white" aria-label="Github" href="https://github.com/Muhammad361738" target="_blank"><Image className='w-8 h-8 rounded-full  ' src={github1} alt="Photo description"  /></a></p> 
+                    <p><a className="h-10 w-10 rounded-full bg-white" aria-label="Github" href="https://github.com/M-Talha183" target="_blank"><Image className='w-8 h-8 rounded-full  ' src={github1} alt="Photo description"  /></a></p> 
                     </div>
                 </div>
             </div>
@@ -55,9 +55,9 @@ const Page = () => {
                 <div className='text-white pt-5'>
                 <p className='hover:text-amber-600'>Web Design</p>
                 <p className='pt-3 hover:text-amber-600'>Web Development</p>
-                <p className='pt-3 hover:text-amber-600'>Product Management</p>
-                <p className='pt-3 hover:text-amber-600'>Marketing</p>
-                <p className='pt-3 hover:text-amber-600'>Graphic Design</p>
+                <p className='pt-3 hover:text-amber-600'>Data Science</p>
+                <p className='pt-3 hover:text-amber-600'>Machine Learning</p>
+                <p className='pt-3 hover:text-amber-600'>Agentic AI</p>
                 </div>
              </div>
              <div className='p-10  '>
@@ -76,4 +76,4 @@ const Page = () => {
     );
 }
 
-export default Page;
+export default Footer;
