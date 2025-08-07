@@ -44,7 +44,7 @@ const educationData = [
     duration: "2021 - 2023",
     description:
       "Studied Physics, Chemistry, and Mathematics with strong academic performance.",
-    certificateLink: "/certificates/iter.jpg",
+    certificateLink: "/certificates/inter.jpg",
   },
   {
     degree: "Matriculation (Science)",
