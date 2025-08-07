@@ -52,7 +52,7 @@ link : "https://coffe-website-21.vercel.app/",
   
 const TestCards = () => {
     return (
-        <div id="projects" className="h-auto w-full bg-black flex flex-col items-center justify-center
+        <div id="projects" className="h-auto w-full bg-black flex flex-col py-10 items-center justify-center
         overflow-hidden ">
            <h2 className="text-3xl mt-10 font-bold text-center  z-10 text-white">My Projects</h2>
             <div className="w-36 h-1 border-b-4 border-yellow-400 
